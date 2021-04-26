@@ -1,7 +1,7 @@
 from r2a.ir2a import IR2A
 from player.parser import *
 import time
-import bitsect
+import bisect
 
 class R2ANewAlgorithm(IR2A):
 
