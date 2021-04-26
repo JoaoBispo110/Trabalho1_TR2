@@ -6,7 +6,7 @@ import bisect
 class R2ANewAlgorithm(IR2A):
 
     def __init__(self, id):
-        SimpleModule.__init__(self, id)
+        IR2A.__init__(self, id)
         self.throughput = 0
         self.time_request = 0
         self.time_response = 0
@@ -39,9 +39,9 @@ class R2ANewAlgorithm(IR2A):
         self.send_up(msg)
 
     def initialize(self):
-        SimpleModule.initialize(self)
+        IR2A.initialize(self)
         pass
 
     def finalization(self):
-        SimpleModule.finalization(self)
+        IR2A.finalization(self)
         pass
