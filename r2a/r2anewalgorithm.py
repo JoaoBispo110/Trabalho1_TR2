@@ -3,7 +3,7 @@ from player.parser import *
 import time
 import bitsect
 
-class R2ANewAlgotithm(IR2A):
+class R2ANewAlgorithm(IR2A):
 
     def __init__(self, id):
         SimpleModule.__init__(self, id)
