@@ -25,7 +25,7 @@ class R2ANewAlgorithm(IR2A):
         self.send_up(msg)
 
     def handle_segment_size_request(self, msg):
-        selected_qi = self.qi[max(0, bitsect_left(self.qi, throughput) - 1)]
+        selected_qi = self.qi[max(0, bisect.bisect_left(self.qi, self.throughput) - 1)]
         msg.add_quality_id(selected_qi)
 
         self.time_request = time.perf_counter()
