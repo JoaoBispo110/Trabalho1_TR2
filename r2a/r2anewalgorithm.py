@@ -10,7 +10,6 @@ class R2ANewAlgorithm(IR2A):
         self.throughput = 0
         self.time_request = 0
         self.time_response = 0
-        #self.whiteboard = Whiteboard.get_instance() # Entender whiteboard depois
 
     def handle_xml_request(self, msg):
         self.time_request = time.perf_counter()
